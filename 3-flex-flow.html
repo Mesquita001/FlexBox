@@ -10,12 +10,23 @@
             display: flex;
             border: 1px solid black;
             max-width: 500px;
+            margin-bottom: 10px;
+            
         }
         .default{
-            flex-flow: nowrap;
+            flex-flow: row wrap;
         }
         .wrap{
-            flex-flow: nowrap;
+            flex-flow: row wrap;
+        }
+        .wrap-reverse{
+            flex-flow: row wrap-reverse;
+        }
+        .r-nowarp{
+            flex-flow: row-reverse nowrap;
+        }
+        .rr-reverse{
+            flex-flow: row-reverse wrap-reverse;
         }
 
         .item{
@@ -41,16 +52,59 @@
 
 
     </div>
+    <h1>wrap</h1>
     <div class="flex container wrap">
         <div class="item">1</div>
         <div class="item">2</div>
         <div class="item">3</div>
         <div class="item">4</div>
         <div class="item">5</div>
+        <div class="item">6</div>
 
 
 
     </div>
+    <h1>wrap-reverse</h1>
+    <div class="flex container wrap-reverse">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+
+
+        <h1>nowrap-reverse nowrap</h1>
+    <div class="flex container r-nowrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
     
+    
+    
+    </div>
+    <h1>row-reverse wrap-reverse</h1>
+    <div class="flex container rr-wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+
+
+
+</div>
 </body>
 </html>
