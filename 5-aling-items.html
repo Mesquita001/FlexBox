@@ -28,10 +28,31 @@
         .stretch{
             align-items: stretch;
         }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
-    <p>center</p>
+    <h1>Row</h1>
+<p>center</p>
     <section class="container center flex">
         <div class="item">Item 1</div>
         <div class="item">Lorem ipsum dolor sit amet</div>
@@ -40,13 +61,68 @@
         
     </section>
 
-    <p>stretch</p>
+<p>stretch</p>
     <section class="container center stretch">
         <div class="item">Item 1</div>
         <div class="item">Lorem ipsum dolor sit amet</div>
         <div class="item">Item 3</div>
         <div class="item">Item 4</div>
         
+    </section>
+<p>Flex-start</p>
+    <section class="container center start">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </section>
+<p>Flex-end</p>
+    <section class="container center end">
+            <div class="item">Item 1</div>
+            <div class="item">Lorem ipsum dolor sit amet</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+    </section>
+<p>baseline</p>
+    <section class="container baseline">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </section>
+<h1>Column</h1>
+<p>Flex-start</p>
+    <section class="container center start column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </section>
+<p>Flex-end</p>
+    <section class="container center end column">
+            <div class="item">Item 1</div>
+            <div class="item">Lorem ipsum dolor sit amet</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+    </section>
+<p>center</p>
+    <section class="container center column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        
+    </section>
+<p>baseline</p>
+    <section class="container baseline column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </section>
+<p>Alinhamento central a tela</p>
+    <section class="container central center">
+        <div class="item">Lorem ipsum dolor sit amet </div>
     </section>
     
 </body>
